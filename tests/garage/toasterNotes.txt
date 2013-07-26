@@ -1,0 +1,48 @@
+// default state?
+everything off gives a default of bus to large fader and mic to small fader
+
+// power consumption tip!
+turn off relays that aren't being used
+
+// NOTE
+ checrelay for inverse logic!
+
+DRIVER 1 - OONNOOOO -> Arduino DataPin HHLLHHHH
+DRIVER 2 - OOOOOONN -> Arduino DataPin HHHHHHLL
+DRIVER 3 - OOOOOOOO -> Arduino DataPin HHHHHHHH
+DRIVER 4 - OONNOOOO -> Arduino DataPin HHLLHHHH
+DRIVER 5 - OOOOOONN -> Arduino DataPin HHHHHHLL
+
+///////////////////////////////////////////////////////
+
+k = relay
+
+driver 1 - out 1  - relay1  - mic/line lg fader - channel 1 ( mic OFF / line ON )
+driver 1 - out 2  - relay2  - bus/tape lg fader - channel 1 ( bus OFF / tape ON )
+driver 1 - out 3  - relay3  - toggle lg fader   - channel 1 ( mic/line ON - bus/tape OFF )
+
+driver 1 - out 4  - relay4  - toggle lg fader   - channel 2 ( mic/line ON - bus/tape OFF
+driver 1 - out 5  - relay5  - bus/tape lg fader - channel 2 ( bus OFF / tape ON )
+driver 1 - out 6  - relay6  - mic/line lg fader - channel 2 ( mic/line ON - bus/tape OFF )
+
+driver 1 - out 7  - relay7  - mic/line sm fader - channel 1 ( mic OFF / line ON )
+driver 1 - out 8  - relay8  - bus/tape sm fader - channel 1 ( bus OFF / tape ON )
+
+///////////////////////////////////////////////////////
+driver 2 - out 1  - relay9  - toggle sm fader   - channel 1 (mic/line OFF - bus/tape ON)
+
+driver 2 - out 2  - relay10 - toggle sm fader   - channel 2 (mic/line OFF - bus/tape ON)
+driver 2 - out 3  - relay11 - bus/tape sm fader - channel 2
+driver 2 - out 4  - relay12 - mic/line sm fader - channel 2
+
+driver 2 - out 5  - relay13 - mic/line lg fader - channel 3
+driver 2 - out 6  - relay14 - bus/tape lg fader - channel 3
+driver 2 - out 7  - relay15 - toggle   lg fader - channel 3 ( mic/line ON - bus/tape OFF)
+
+driver 2 - out 8  - relay15 - toggle   lg fader - channel 4 ( mic/line ON - bus/tape OFF)
+
+///////////////////////////////////////////////////////
+driver 3 - out 1  - relay16 - bus/tape lg fader - channel 4
+driver 3 - out 2  - relay17 - mic/line lg fader - channel 4
+
+--

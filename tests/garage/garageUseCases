@@ -1,0 +1,59 @@
+
+
+    /////////DEFAULT/////////////
+    /////////////////////////////
+    // SMALL FADER MIC
+    // LARGE FADER BUS
+    /////////////////////////////
+
+    relayOff();
+    relayOff();
+    relayOff();
+    relayOff();
+    relayOff();
+    relayOff();
+
+-------------------------------------------------------------------------------------
+    /////////////////////////////
+    // SMALL FADER MIC
+    // LARGE FADER MIC
+    /////////////////////////////
+
+    relayOff();
+    relayOff();
+    relayOn();
+    relayOn();
+    relayOff();
+    relayOff();
+    relayOff();
+    relayOff();
+
+-------------------------------------------------------------------------------------
+    /////////////////////////////
+    // SMALL FADER LINE
+    // LARGE FADER LINE
+    /////////////////////////////
+
+    relayOn();
+    relayOff();
+    relayOn();
+    relayOn();
+    relayOff();
+    relayOff();
+    relayOn();
+    relayOff();
+
+-------------------------------------------------------------------------------------
+    /////////////////////////////
+    // SMALL FADER ???
+    // LARGE FADER BUS
+    /////////////////////////////
+
+    relayOff();
+    relayOn();
+    relayOff();
+    relayOff();
+    relayOff();
+    relayOff();
+    relayOn();
+    relayOff();
